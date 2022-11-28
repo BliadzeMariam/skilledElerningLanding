@@ -1,0 +1,296 @@
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #13183f;
+    margin: 16px;
+}
+
+.header .logo,
+.footer .logo {
+    height: 28px;
+}
+
+.header-button {
+    background-color: #13183f;
+    color: #ffffff;
+    border-radius: 28px;
+    width: 140px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.header-button:hover {
+    background-color: #666ca3;
+    cursor: pointer;
+}
+
+.intro-heading {
+    color: #13183f;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 800;
+    margin: 16px;
+    margin-top: 32px;
+    margin-bottom: 26px;
+}
+
+.intro-paragraph,
+.course-card__description {
+    color: #83869a;
+    font-size: 16px;
+    margin: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.intro-btn {
+    background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+    color: white;
+    border-radius: 50px;
+    width: 167px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 24px 16px;
+}
+
+.intro-btn:hover {
+    background: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+    cursor: pointer;
+}
+
+.intro-image {
+    background-image: url("./images/image-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 435px 409px;
+    height: 386px;
+    width: 100%;
+    margin: auto;
+}
+
+.intro-card {
+    margin: 16px;
+    background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    height: 120px;
+    margin-top: 40px;
+}
+
+.course-card {
+    padding: 1rem;
+    padding-bottom: 0;
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-card__heading {
+    color: #13183f;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: -25px;
+    margin-bottom: 16px;
+    line-height: 28px;
+}
+
+.course-card__logo {
+    position: relative;
+    top: -45px;
+    display: block;
+    width: 56px;
+}
+
+.course-card__description {
+    margin: 0;
+}
+
+.course-card__link {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 24px;
+    color: #f74780;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.course-card__link:hover {
+    color: #ffa7c3;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: #13183f;
+    height: 112px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.footer-button {
+    background: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+    color: #ffffff;
+    border-radius: 50px;
+    width: 128px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.footer-button:hover {
+    background: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    .hero-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 80vh;
+        background-image: url(./images/image-hero-tablet.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+
+    .header-button {
+        z-index: 1;
+    }
+
+    .main-wrapper {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 86px;
+    }
+
+    .intro-card {
+        margin: 40px 0 0 0;
+        padding: 56px 32px;
+    }
+
+    .intro-heading {
+        font-size: 36px;
+    }
+
+    .intro-text {
+        height: 50vh;
+        width: 48%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .intro-image {
+        display: none;
+    }
+
+    .intro-paragraph,
+    .course-card__description {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .course-cards {
+        width: 90%;
+        height: 930px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 30%);
+        gap: 32px 15px;
+    }
+
+    .intro-card,
+    .course-card {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-image {
+        height: 100vh;
+        background-image: url(./images/image-hero-desktop.png);
+        background-position: 125px -180px;
+        background-size: auto 120%;
+    }
+
+    .intro-heading {
+        font-size: 56px;
+        line-height: 70px;
+    }
+
+    .course-cards {
+        width: 95%;
+        height: 700px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 44%);
+        gap: 56px 30px;
+        margin-bottom: 140px;
+    }
+
+    .intro-text {
+        margin-top: 160px;
+        margin-bottom: 160px;
+    }
+
+    .intro-card {
+        font-size: 28.8px;
+    }
+
+    .intro-card,
+    .course-card {
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    .main-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+}
