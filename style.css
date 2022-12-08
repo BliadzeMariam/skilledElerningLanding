@@ -185,7 +185,7 @@ body {
 @media (min-width: 576px) {
     .hero-image {
         position: absolute;
-        top: 0;
+        top: -100px;
         right: 0;
         width: 50%;
         height: 80vh;
